@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "368877491098",
+    "project_id": "code-scanner-c98ad",
+    "storage_bucket": "code-scanner-c98ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368877491098:android:e6fd8d481936493c702023",
+        "android_client_info": {
+          "package_name": "com.example.codescanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368877491098-blavbqj03a14oelqf3uk7vglpsfeabc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2fp6TJ_DRt4prjapqR3gatfzND7ZuRgw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368877491098-blavbqj03a14oelqf3uk7vglpsfeabc8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

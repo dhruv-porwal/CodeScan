@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+tools:context=".Enter">
+
+<!--text view for heading-->
+<TextView
+    android:id="@+id/idTVHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+
+    android:gravity="center_horizontal"
+    android:padding="5dp"
+    android:text="Enter complete address "
+    android:textStyle="bold"
+    app:boxStrokeColor="@color/black"
+    android:textAlignment="center"
+
+
+    android:textColor="@color/black"
+    android:textSize="18sp" />
+
+
+
+<!--edit text for user name-->
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/idEdtUserName"
+    android:layout_marginTop="50dp"
+    app:boxStrokeColor="@color/black"
+    android:textColorHint="@color/grey"
+    android:layout_below="@id/idTVHeader"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+    >
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/idEdtUserNameo"
+
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="50dp"
+        app:boxStrokeColor="@color/black"
+        android:maxLines="5"
+        android:layout_below="@id/idEdtUserName"
+        android:layout_marginStart="10dp"
+
+
+
+        android:textColor="@color/black"
+
+
+        android:layout_marginEnd="10dp"
+        android:hint=" Recipient's name"
+        android:inputType="textEmailAddress" />
+
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<!--edit text for user service-->
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/idEdtService"
+    app:boxStrokeColor="@color/black"
+
+    android:layout_marginTop="20dp"
+    android:textColorHint="@color/grey"
+
+    android:layout_below="@id/idEdtUserName"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    >
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/emalob"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="50dp"
+        app:boxStrokeColor="@color/black"
+        android:scrollbars="vertical"
+        android:maxLines="5"
+        android:layout_below="@id/idEdtUserName"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginEnd="10dp"
+        android:hint="  Email"
+        android:textColor="@color/black"
+        android:inputType="text" />
+</com.google.android.material.textfield.TextInputLayout>
+
+
+
+<com.google.android.material.textfield.TextInputLayout
+
+    android:id="@+id/autocomplete"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+
+    app:boxStrokeColor="@color/black"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/idEdtService"
+    android:textColorHint="@color/grey"
+
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    >
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+
+
+
+        android:id="@+id/passo"
+        android:textColorHint="#fff"
+
+
+        android:layout_width="match_parent"
+
+
+        android:layout_height="50dp"
+        android:padding="10dp"
+
+
+        android:layout_marginStart="10dp"
+
+        android:layout_marginEnd="10dp"
+
+        android:textColor="@color/black"
+
+
+
+
+
+
+
+
+
+
+        android:hint="  Password"
+        android:inputType="text" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<!--</HorizontalScrollView>-->
+
+
+
+<Button
+    android:id="@+id/button_signup"
+    android:layout_width="300dp"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/autocomplete"
+    android:layout_marginStart="10dp"
+    android:background="@color/teal_200"
+
+    app:cornerRadius="10dp"
+
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="10dp"
+    app:backgroundTint="@color/teal_200"
+    android:textColor="@color/black"
+    android:text="Sign Up"
+
+    android:textAllCaps="false" />
+
+<!--button to register our new user-->
+<Button
+    android:id="@+id/btn_signin"
+    android:layout_width="300dp"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/button_signup"
+    android:layout_marginStart="10dp"
+    android:background="@color/light_green"
+    app:cornerRadius="10dp"
+
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="10dp"
+
+    app:backgroundTint="@color/green"
+    android:textColor="@color/black"
+    android:text="Sign In"
+
+    android:textAllCaps="false" />
+
+<Button
+    android:id="@+id/btnViewRecords"
+    android:layout_width="300dp"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/btn_signin"
+    android:layout_marginStart="10dp"
+    android:background="@color/design_default_color_primary"
+    app:cornerRadius="10dp"
+
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="10dp"
+
+    app:backgroundTint="@color/design_default_color_primary"
+    android:textColor="@color/white"
+    android:text="View Records"
+
+    android:textAllCaps="false" />
+
+</RelativeLayout>
